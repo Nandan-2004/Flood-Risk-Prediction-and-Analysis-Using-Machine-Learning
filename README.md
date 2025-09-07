@@ -39,7 +39,3 @@ This Week 2 milestone covers **data collection, preprocessing, and exploratory d
 - **Programming Language:** Python  
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, KaggleHub  
 - **Environment:** Jupyter Notebook / Google Colab  
-
----
-
-## Folder Structure
