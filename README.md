@@ -1,50 +1,45 @@
-# Satellite-Image-Based-Disaster-Detection
-Satellite Image-Based Flood Detection and Mapping using Sentinel-1 SAR data and U-Net deep learning model. Provides rapid disaster mapping for flood-affected regions.
+# Flood Risk Prediction and Analysis Using Machine Learning
 
----
+## Project Overview
+This project focuses on predicting flood risk based on environmental and socio-economic factors using Machine Learning techniques. The main objective is to assess flood-prone areas and provide insights for climate risk and disaster management.  
 
-This project uses **Sentinel-1 SAR satellite imagery** and **deep learning (U-Net, YOLOv8)** to detect and map flood-affected regions.  
-It enables **rapid disaster response** by generating flood extent maps for emergency management and relief planning.  
-
----
-
-## Objectives
-- Detect flood-affected areas from Sentinel-1 SAR images.
-- Generate pixel-level flood maps using U-Net segmentation.
-- Compare real-time detection performance with YOLOv8.
-- Provide tools for disaster management and rapid damage mapping.
+This Week 2 milestone covers **data collection, preprocessing, and exploratory data analysis (EDA)**.
 
 ---
 
 ## Dataset
-- **SEN12-FLOOD** (Sentinel-1 SAR + flood/non-flood labels)  
+- **Source:** Kaggle Flood Prediction Dataset  
+- **Link:** [Flood Prediction Dataset](https://www.kaggle.com/datasets/naiyakhalid/flood-prediction-dataset)  
+- **Description:** The dataset contains 50,000 records with numeric features representing flood-related factors, such as Monsoon Intensity, River Management, Urbanization, Deforestation, and more.
 
 ---
 
-## Models Used
-- **U-Net** → Pixel-level segmentation for flood extent mapping.
-- **YOLOv8** → Object detection for bounding-box flood area estimation.
+## Week 2 Milestone Tasks
+1. **Data Collection:** Downloaded the Kaggle dataset and extracted CSV files.  
+2. **Data Preprocessing:**  
+   - Checked and handled missing values for numeric and categorical columns.  
+   - Normalized numeric features where necessary.  
+3. **Exploratory Data Analysis (EDA):**  
+   - Plotted feature distributions to understand the spread of flood risk factors.  
+   - Generated correlation heatmap to identify relationships between variables.  
+   - Created synthetic target variable (`flood_risk`) for modeling purposes.  
+4. **Saved Preprocessed Dataset:** Ready for Week 3 model training.
 
 ---
 
-## Workflow
-1. Data Collection (SEN12-FLOOD dataset)  
-2. Preprocessing (cloud masking, normalization, patches)  
-3. Model Training (U-Net / YOLOv8)  
-4. Evaluation (IoU, Dice Score, Precision-Recall)  
-5. Visualization (Flood extent overlay on satellite imagery)  
+## Improvisations Done
+- Cleaned and preprocessed the dataset to ensure quality and consistency.  
+- Conducted detailed exploratory analysis with visualizations for better insights.  
+- Generated a synthetic `flood_risk` label for classification in the upcoming model training.  
+- Documented all steps clearly in the Jupyter Notebook for reproducibility.  
 
 ---
 
-## Tech Stack
-- Python (PyTorch, TensorFlow)
-- OpenCV, Rasterio, GDAL
-- Jupyter Notebooks / Google Colab
+## Tools & Libraries
+- **Programming Language:** Python  
+- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, KaggleHub  
+- **Environment:** Jupyter Notebook / Google Colab  
 
 ---
 
-## Results (to be added after experiments)
-- Flood extent maps  
-- Quantitative metrics  
-
----
+## Folder Structure
